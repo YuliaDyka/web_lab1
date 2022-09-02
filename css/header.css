@@ -1,0 +1,99 @@
+/*Headers */
+
+@media screen and (max-width: 1300px){
+    .header {
+        position: fixed;
+        left: 0;
+        right: 0;
+        padding: 3px;
+        background-color: white;
+        z-index: 10;
+    }
+}  
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+}
+
+.header-menu {
+    display: none;
+    width: 32px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px){
+    .header-menu {
+        display: flex;
+    }
+} 
+
+.header-block {
+    display: flex;
+}
+
+@media screen and (max-width: 1024px){
+    .header-block {
+        width: 100%;
+    }
+} 
+
+@media screen and (max-width: 900px){
+    .header-block {
+        justify-content: flex-start;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .header-block {
+        display: block;
+    }
+}
+
+.header-item {
+    font-size: 15px;
+    margin-right: 60px;
+}
+
+@media screen and (max-width: 1024px) {
+    .header-item{
+        margin-right: 20px;
+        font-size: 15px;
+    }   
+}
+
+p{
+    opacity: 0.5;
+    color: #1F1534;
+}
+
+.heaader-link {
+    text-decoration: none;
+}
+
+.header-block a:link{
+    text-decoration: none;
+}
+
+.header-block a:hover{
+    color: black;
+    font-weight:bold;
+    text-decoration: none;
+}
+
+.item-home{
+    font-weight:bold;
+}
+
+.item-home:hover{
+    color: #458FF6;
+}
+
+@media screen and (max-width: 1024px) {
+    .header-logo{
+        margin-left: 60px;
+    }  
+}

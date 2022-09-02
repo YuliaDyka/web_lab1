@@ -1,0 +1,90 @@
+/*Cards block*/
+
+
+.check-title h1{
+    text-align:center;
+    margin-top: 211px;
+  }
+
+.hr-check{
+    width:4%;
+    text-align:center;
+    border: none;
+    border-top: 2px solid black;
+    margin-bottom: 35px;
+}
+
+.cards-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    min-width: 350px;
+    margin-bottom: 50px;
+    margin-top: 60px;
+}
+
+.card-block {
+    box-shadow: rgba(194, 201, 209, 0.2) 5px 9px 24px;
+    border-radius: 30px;
+    margin-right: 70px;
+    background-color: white;
+}
+
+.block-text {
+    text-align: left;
+    padding: 15px 71px 15px 34px;
+    max-width: 230px;
+}
+
+.card-description {
+    width: 240px;
+    margin-bottom: 40px;
+}
+
+.card-link {
+    border: none;
+    color: #458FF6;
+}
+
+.block-text a:hover{
+    color: rgb(21, 9, 81);
+    font-weight: bold;
+}
+
+.crd-img {
+    margin-left: 9px;
+}
+
+.backround-img {
+    background-image: url(../images/background-cards.png);
+    background-position: right 70px;
+    background-repeat: no-repeat;
+    height: 600px;
+    margin-top: 150px;
+    
+} 
+
+.block-btn-view {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1300px) {
+    .cards-block  {
+        width: 36%;
+        font-size: 22px;
+        flex-direction: column; 
+        height:auto; 
+        margin-left: 340px;
+    }
+
+    .backround-img {
+        background-image: none;
+    }
+
+    .card-block {
+        box-shadow: rgba(35, 117, 210, 0.2) 5px 9px 24px;
+        margin-bottom: 15px;
+    }
+}
