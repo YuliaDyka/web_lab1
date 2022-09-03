@@ -1,6 +1,6 @@
 /* Footer block */
 
-.footer-block{
+footer{
     height: 153px;
     background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
     display: flex;
@@ -8,7 +8,7 @@
 }
 
 @media screen and (max-width: 1300px){
-    .footer-block {
+    footer {
         height: 200px;
         justify-content: flex-start;
     }
@@ -33,11 +33,11 @@
     text-decoration: none;
 }
 
-.footer-block a:link{
+footer a:link{
     text-decoration: none;
 }
 
-.footer-block a:hover{
+footer a:hover{
     color: black;
     font-weight:bold;
     text-decoration: none;

@@ -1,99 +1,87 @@
-/*Headers */
+ /* Headers */
 
-@media screen and (max-width: 1300px){
-    .header {
-        position: fixed;
-        left: 0;
-        right: 0;
-        padding: 3px;
-        background-color: white;
-        z-index: 10;
-    }
-}  
-
-.header-container {
+ header {
+    width: 100%;
+    position: fixed;
+    padding: 3px;
+    background-color: white;
+    z-index: 10;
+}
+  
+  #nav-links {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 12px;
-}
+    justify-content:space-between;
+  }
 
-.header-menu {
-    display: none;
-    width: 32px;
-    cursor: pointer;
-}
-
-@media screen and (max-width: 600px){
-    .header-menu {
-        display: flex;
-    }
-} 
-
-.header-block {
-    display: flex;
-}
-
-@media screen and (max-width: 1024px){
-    .header-block {
-        width: 100%;
-    }
-} 
-
-@media screen and (max-width: 900px){
-    .header-block {
-        justify-content: flex-start;
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 600px){
-    .header-block {
-        display: block;
-    }
-}
-
-.header-item {
-    font-size: 15px;
+  #nav-links a {
+    font-size: 20px;
     margin-right: 60px;
-}
-
-@media screen and (max-width: 1024px) {
-    .header-item{
-        margin-right: 20px;
-        font-size: 15px;
-    }   
-}
-
-p{
     opacity: 0.5;
     color: #1F1534;
-}
 
-.heaader-link {
+  }
+
+  .heaader-link {
     text-decoration: none;
+    }
+
+    a:link{
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: black;
+        font-weight:bold;
+        text-decoration: none;
+    }
+
+  .topnav a.icon {
+    display: flex;
+    position: absolute;
+    top: 0;
+    margin: 10px;
+  }
+
+  .icon {
+    display: none;
+  }
+
+ @media screen and (max-width: 1300px) {
+    .topnav a {
+        color: black;
+        padding: 14px 16px;
+        margin-top: 20px;
+        text-decoration: none;
+        font-size: 37px;
+        display: block;
+      }
+      
+      .topnav a.icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        margin: 10px;
+        display: flex;
+          background-image: url(../images/ios-menu.svg);
+          background-repeat: no-repeat;
+      }
+
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      #nav-links {
+        display: none;
+        background-color: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+        margin-top: 20px;
+      }
+    
 }
 
-.header-block a:link{
-    text-decoration: none;
-}
-
-.header-block a:hover{
-    color: black;
-    font-weight:bold;
-    text-decoration: none;
-}
-
-.item-home{
-    font-weight:bold;
-}
-
-.item-home:hover{
-    color: #458FF6;
-}
-
-@media screen and (max-width: 1024px) {
-    .header-logo{
-        margin-left: 60px;
-    }  
+.header-logo {
+    float: right;
+    margin-right: 70px;
+    margin-left: 100px;
+    
 }

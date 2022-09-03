@@ -6,27 +6,20 @@
 
   <body> 
     <header class="header">
-      <div class="container header-container">
-        <div id="nav-links" class="header-block">
-            <div class="header-item">
-              <a class="heaader-link" href=""><p class="item-home">Home</p></a>
-            </div>
-            <div class="header-item">
-              <a class="heaader-link" href=""><p>Find a doctor</p></a>
-            </div>
-            <div class="header-item">
-              <a class="heaader-link" href=""><p>Apps</p></a>
-            </div>
-            <div class="header-item">
-              <a class="heaader-link" href=""><p>Testimonials</p></a>
-            </div>
-            <div class="header-item">
-              <a class="heaader-link" href=""><p>About us</p></a>
-            </div>
-        </div>
+      <div class="container topnav">
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+          <img src="./images/ios-menu.svg" alt="Menu icon">
+        </a>
         <div class="header-logo">
           <img src="images/logo.png" > 
         </div>
+        <nav id="nav-links">
+          <a href="#home">Home</a>
+          <a href="">Find a doctor</a>
+          <a href="#apps">Apps</a>
+          <a href="">Testimonials</a>
+          <a href="#about">About us</a>
+        </nav>
       </div>
     </header>
     <div class="container download-block">
@@ -38,7 +31,7 @@
           <button class="btn-download">Download <img src="images/Vector.png" alt="test" class="dwn-img"></button>
       </div>
       <div>
-        <div class="download-image" style="margin-right: 80px;">
+        <div class="download-image">
           <img src="images/trafalgar-illustration sec03 1.png">
         </div>
         <img src="images/element.png" class="dot-img">
@@ -118,7 +111,7 @@
         <img src="images/arrow nav.png">
       </div>
     </div>
-    <div class="footer-block">
+    <footer class="footer-block">
       <img src="images/element.png" class="dot-foot-img">
       <div class="footer-logo">
         <img src="images/trafalgar.png" > 
@@ -134,6 +127,17 @@
           <a class="footer-link" href="">Help</a>
         </div>
       </div>
-    </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        let nav_links = document.getElementById("nav-links");
+        if (nav_links.style.display === "block") {
+          nav_links.style.display = "none";
+        } else {
+          nav_links.style.display = "block";
+        }
+      }
+      </script>
   </body>
 </html>
