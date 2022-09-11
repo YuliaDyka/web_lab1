@@ -6,12 +6,6 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
 }
 
-@media screen and (max-width: 1300px) {
-body {
-  background: #F3F8FE;
-}
-}
-
 .container {
   margin: 0 auto;
   max-width: 1259px;
@@ -20,7 +14,7 @@ body {
 
 @media screen and (max-width: 1300px) {
 .container{
-  padding: 0 40px;
+  padding: 0;
+  margin-left: -10px;
 }
-
 }
