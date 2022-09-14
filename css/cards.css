@@ -4,6 +4,9 @@
 .check-title h1{
     text-align:center;
     margin-top: 211px;
+    animation-name: title_color;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
   }
 
 .hr-check{
@@ -45,6 +48,9 @@
 .card-link {
     border: none;
     color: #458FF6;
+    animation-name: color_text;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 .block-text a:hover{
@@ -93,6 +99,9 @@
 .block-btn-view {
     display: flex;
     justify-content: center;
+    animation-name: btn-pulsing;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 @media only screen and (max-width: 400px) {
