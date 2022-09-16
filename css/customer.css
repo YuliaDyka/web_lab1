@@ -13,9 +13,7 @@
     background: #F3F8FE;
     height: 770px; 
     margin-top: 200px;
-   
 }
-
 
 .customer-title{
     text-align:center;
@@ -65,11 +63,11 @@
 @media screen and (max-width: 1300px) {
     .customer-info {
         height: 700px;
-        width: 50%;
-        
+        width: 95%;
+        border-radius: 0;
     }   
     .customer-block{
-        margin-top: 1500px;
+        margin-top: 2030px;
         margin-bottom: 200px;
     }
     .customer-inf {
@@ -79,11 +77,6 @@
     .customer-img {
        margin: 0;
     }
-}
-@media screen and (max-width: 1300px) {
-    .customer-info {
-        height: 700px;
-    }   
 }
 
 .customer-speech{
@@ -101,4 +94,22 @@
     display: flex;
     justify-content: center;
     margin-top: -150px;
+}
+
+@media only screen and (max-width: 600px) {
+    .customer-info{
+        width: 103%;
+    }
+
+    .customer-speech{
+        width: 290px;
+    }
+
+    .cs-img img{
+        width: 80%;
+    }
+
+    .customer-block{
+        margin-top: 1470;
+    }
 }
